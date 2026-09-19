@@ -63,3 +63,8 @@ addNumbers(10, 20, 30, 40);
 console.log(addNumbers(10, 20, 30, 40,50));
 
 
+
+const getYear = (stri) => stri.split("-")
+
+console.log(getYear("Mansur"));
+
