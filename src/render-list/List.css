@@ -1,0 +1,31 @@
+
+
+
+
+.list-container{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-self:center;
+}
+
+.pizza {
+  display: flex;
+  gap: 50px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.pizza-img img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
