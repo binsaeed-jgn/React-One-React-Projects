@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.profile-card {
+  width: 60%;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px; 
+  box-shadow: 1px 2px 3px 1px rgb(160, 157, 157);
+   
+}
+
+/* Photo covers the entire top of the card */
+
+.photo-component {
+  width: 100%;
+}
+
+.photo-component img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+
+/* Bio */
+
+.bio-component {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Two-column skills */
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+
+/* Individual skill */
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 5px;
+  
+}
+
+.skills img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

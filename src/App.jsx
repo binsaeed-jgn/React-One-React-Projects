@@ -1,18 +1,18 @@
 /* import { useState } from 'react' */
+//import FoodCo from "./foodCo/FoodCo"
+import Profile from "./my-profile/Profile"
 
-import './App.css'
+
 
 function App() {
-  
   return (
-    <div>
-    <h1>Master</h1>
-    <h2>BUk </h2>
-    <p>learner</p>
-
+    <div className ="container">
+      <Profile/>
     </div>
-  
   );
 }
 
-export default App
+
+
+
+export default App;
