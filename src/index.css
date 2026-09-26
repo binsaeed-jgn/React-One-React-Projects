@@ -135,11 +135,11 @@ body {
   gap: 4.8rem;
 }
 
-/* .pizza {
+ .pizza {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
-} */
+} 
 
 .pizza img { 
   width: 15rem;

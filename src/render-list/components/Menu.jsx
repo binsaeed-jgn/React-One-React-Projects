@@ -45,21 +45,37 @@ const pizzaData = [
   },
 ];
 
-console.log(pizzaData)
 
+console.log(pizzaData)
 function Menu(){
+ const pizza = pizzaData;
+  //const pizza = [];
+  const numPizzas = pizza.length;
+
+
+  
   return(
     <main className="menu">
       <h2>Our Menu</h2>
-
-      <div className="pizza-grid">
-        {pizzaData.map((pizza) => (
+    
+      {numPizzas > 0 ? (
+        <>
+          <p>Authentic Italian cuisine. 6 dishes to choose from.
+          All from our stone oven, all organic, all delicious
+        </p>
+          <ul className="pizza-grid pizzas">
+        {pizza.map((pizza) => (
           <FoodList
             key={pizza.name}
             pizzaObj={pizza}
           />
         ))}
-      </div>
+      </ul> 
+        </>
+      
+      ): <p>We're still working on our Menu</p>}
+
+    
       {/* <FoodList name="yam"/> */}
       
         

@@ -1,5 +1,6 @@
 /* import { useState } from 'react' */
 import Menu from "./components/Menu"
+import Footer from "./components/Footer"
 import "./List.css"
 
 
@@ -27,13 +28,6 @@ function Header() {
 }
 
 
-function Footer(){
 
-  return (
-  <footer className="footer">
-    {new Date().toLocaleTimeString()}.We are Open
-  </footer>
-)
-}
 
 export default List;

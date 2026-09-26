@@ -1,18 +1,20 @@
 
-function FoodList(props) {
+function FoodList({pizzaObj}) {
+  
+
   return (
-    <div className="pizza-img">
+    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
       <img
-        src={props.pizzaObj.photoName}
-        alt={props.pizzaObj.name}
+        src={pizzaObj.photoName}
+        alt={pizzaObj.name}
       />
 
       <div>
-        <h3>{props.pizzaObj.name}</h3>
-        <p>{props.pizzaObj.ingredients}</p>
-        <span>${props.pizzaObj.price + 5}</span>
+        <h3>{ pizzaObj.name}</h3>
+        <p>{ pizzaObj.ingredients}</p>
+        <span>${pizzaObj.price + 5}</span>
       </div>
-    </div>
+    </li>
   );
 }
 

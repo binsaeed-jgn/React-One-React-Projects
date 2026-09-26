@@ -68,3 +68,11 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.intermediate {
+  background-color: yellow;
+}
+.beginner{
+    background-color: green;
+}  
+
