@@ -1,0 +1,19 @@
+
+
+.steps  {
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  justify-content:space-evenly;
+  align-items:center;
+
+}
+
+.counter {
+  display:flex;
+  flex-direction:row;
+    width:100%;
+  justify-content:space-evenly;
+  align-items:center;
+
+}
