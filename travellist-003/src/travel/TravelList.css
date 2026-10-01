@@ -29,7 +29,7 @@ body {
   grid-template-rows: auto auto 1fr auto;
 }
 
-h1 {
+.h1-travel {
   text-align: center;
   background-color: #f4a226;
   color:floralwhite;
