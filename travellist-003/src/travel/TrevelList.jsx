@@ -14,14 +14,28 @@ export default function TravelList(){
   function handleDeleteItem(id){
     setItems((items)=> items.filter((items)=> items.id !== id));
   }
+  function handleToggleItem(id){
+    setItems((items)=> items.map((item)=>
+      item.id === id ? {...item, packed: !item.packed} : item
+    ))
+  }
 
+  function handleClearList(){
+    const confirm = window.confirm("Are sure you want to delete all the list")
+    if (confirm)  setItems([])
+  }
   return(
 
     <div className="app">
       <Logo />
       <Form onAddItems= {handleAddItem}/>
-      <PackageList items = {items} onDeleteItem={handleDeleteItem}/>
-      <Stats/>
+      <PackageList 
+        items = {items}
+        onDeleteItem={handleDeleteItem}
+        onToggleItem = {handleToggleItem}  
+        onClearList = {handleClearList}
+      />
+      <Stats items = {items} />
 
     </div>
   )

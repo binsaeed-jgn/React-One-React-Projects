@@ -9,6 +9,7 @@ export default function Form({onAddItems}) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (!description.trim()) return; 
 
     const newItem = {
       description,
